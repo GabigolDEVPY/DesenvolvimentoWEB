@@ -1,16 +1,17 @@
-from flask import Flask, jsonify
-from flask_cors import CORS
-
-
-
+from flask import Flask, jsonify, render_template, request
 
 app = Flask(__name__)
-CORS(app)
 
-@app.route("/dados", methods=["GET"])
+
+@app.route("/", methods=["GET"])
 def retornarDados():
-    return jsonify([{"id": 32, "nome": "Gabriel", "mensagem": "nãooo"}])
+    return render_template("index.html")
 
+@app.route("/enviar", methods=["POST"])
+def EnviarDados():
+    dados = request.form.to_dict()
+    print(dados)
+    return render_template("usuarios.html", user=dados)
 
 
 if __name__ == "__main__":

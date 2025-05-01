@@ -1,0 +1,78 @@
+.morango-label {
+    color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 68, 93);
+    padding: 20px;
+
+}
+
+
+input {
+    display: block;
+    margin-bottom: 5px;
+    width: 95%;
+    padding: 7px;
+    border: 1px solid rgb(255, 73, 110);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    color: rgb(255, 73, 110);
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+form {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(36, 36, 36);
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 73, 110);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 73, 110);
+    box-shadow: 2px 2px 8px 0px rgb(255, 73, 110);
+    cursor: pointer;
+}
+
+nav ul{
+    background-color: azure;
+    border-radius: 5px;
+    display: flex;
+    list-style: none;
+    margin: auto;
+    padding: 15;
+    gap: 55px;
+    font-weight: bold;
+    height: 40px;
+    align-items: center;
+}
+
+nav li a{
+    margin: 3px;
+    text-decoration: none;
+    color: rgb(255, 73, 110);
+
+}
