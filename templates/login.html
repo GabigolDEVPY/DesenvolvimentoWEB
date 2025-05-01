@@ -8,7 +8,7 @@
 </head>
 <nav>
     <ul>
-        <li><a href="{{url_for('retornarDados')}}">Pagina inicial</a></li>
+        <li><a href="{{url_for('main.return_login')}}">Pagina inicial</a></li>
         <li><a href="https://www.youtube.com">Contato</a></li>
         <li><a href="X">Sobre</a></li>
     </ul>
@@ -16,7 +16,7 @@
 
 <body>
     <h1>Meu amor de morango</h1>
-    <form action="{{url_for('EnviarDados') }}" method="POST">
+    <form action="{{url_for('main.enviar_dados')}}" method="POST">
         <label for="name">Nome:</label>
         <input type="text" id="nome" name="name" required><br><br>
         <label for="email">E-mail:</label>
