@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+  <ul>
+    <li><a href="{{ url_for('login.return_login')}}">Logout</a></li>
+    <li>Logout</li>
+  </ul>
+  </nav>
+  <h1>Lista de produtos</h1>
+  {% if produtos %}
+    <div class="classe-pai">
+      {% for produto in produtos %}
+        <div class="card-produto">
+          <input type="checkbox" id="produto{{ produto.id }}">
+          <label for="produto{{ produto.id }}">
+            <img src="={{ produto.imagem }}" alt="{{ produto.nome }}">
+            <h2>{{ produto.nome }}</h2>
+            <p>R$ {{ "%2f"|format(produto.preco) }}</p>
+          </label>  
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+  <h3 style="margin-top: 30px ;" >Não há itens na lista</h3>  
+  {% endif %}  
+</body>
+</html>

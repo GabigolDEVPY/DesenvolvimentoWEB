@@ -58,11 +58,11 @@ button:hover {
 }
 
 nav ul{
-    background-color: azure;
+    background-color: rgb(255, 73, 110);
     border-radius: 5px;
     display: flex;
     list-style: none;
-    margin: auto;
+    margin: 10px;
     padding: 15;
     gap: 55px;
     font-weight: bold;
@@ -71,8 +71,25 @@ nav ul{
 }
 
 nav li a{
-    margin: 3px;
+    margin: 10px;
     text-decoration: none;
-    color: rgb(255, 73, 110);
+    color: rgb(255, 255, 255);
+}
 
+
+h3 {
+    text-align: center;
+}
+
+.classe-pai {
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;     /* Se quiser também na vertical */
+    height: 100vh;           /* Ocupa a altura toda da tela */
+}
+
+.card-produto {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
 }
