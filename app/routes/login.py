@@ -2,7 +2,7 @@ from flask import Blueprint, render_template
 
 main_bp = Blueprint('login', __name__, template_folder='../templates')
 
-
+ta ="dfasd"
 
 
 @main_bp.route("/", methods=["GET"])
